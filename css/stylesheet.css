@@ -248,7 +248,14 @@ font-size: 18px;
 	margin-top:30px;
 	margin-left:50px;
 }
-#webdesign #webmaking{
+#webdesign{
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+	background-image:url("../image/web_bg.jpg");
+	background-repeat: no-repeat;
+}
+#webmaking{
 	height:100vh;
 	background-size:cover;
 	background-position:center;
