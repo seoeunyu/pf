@@ -14,7 +14,484 @@
     <script src="js/script.js"></script>
     <title>PORTFOLIO</title>
 </head>
+<style>
 
+#header{
+	width:100vw;
+	height:60px;
+	background-color:#fff;
+	position:fixed;
+	z-index:1;
+}
+#logo{
+	width:300px;
+	height:60px;
+	float:left;
+}
+.nav{
+	width:1200px;
+	height:60px;
+	float:right;
+}
+.nav > ul > li {
+	width:200px;
+	float:left;
+	line-height:60px;
+	text-align:center;
+	font-size:22px;
+	font-weight:bold;
+	font-family: 'NanumSquare', sans-serif ;
+}
+.nav > ul > li > a {
+	text-decoration:none;
+}
+#main{
+	height:100vh;
+	background-image:url("../image/캡처.PNG");
+	background-position:top;
+	background-position:right;
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+.main_txt{
+	width:600px;
+	height:500px;
+	padding:250px;
+}
+.main_txt > p {
+	font-family: 'NanumSquare', sans-serif;
+	font-size: 28px;
+	line-height:50px;
+	position:relative;
+	top:80px;
+	left:20px;
+}
+.main_txt > h2 {
+	font-size: 60px;
+	font-family:'Recipekorea';
+	color:#f8e15d;
+	margin-bottom:20px;
+	margin-left:10px;
+}
+.main_txt > h1{
+	font-size: 100px;
+	font-family:'Recipekorea';
+	color:#f8e15d;
+}
+#profile{
+	height:100vh;
+	position:relative;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-image : url("../image/profile_bg.jpg");
+}
+.profile_content{
+	width:1400px;
+	height:800px;
+	position:absolute;
+	top:150px; left:0; right:0; bottom:0; margin:0 auto;
+}
+.p_box > ul > li {
+	font-family: 'NanumSquare', sans-serif;
+	font-size:18px;
+	line-height:30px;
+	margin-left:10px;
+}
+.p_box > ul > li > span{
+	margin-right:10px;
+}
+.p_box > h3 {
+	font-family: 'NanumSquare', sans-serif;
+	font-size:28px;
+	font-weight:bold;
+	color:#f8e15d;
+	margin-bottom:20px;
+}
+.p_box2 > h3 {
+	font-family: 'NanumSquare', sans-serif;
+	font-size:28px;
+	font-weight:bold;
+	color:#f8e15d;
+	margin-bottom:20px;
+}
+.profile_1{
+	width:400px;
+	height:700px;
+	float:left;
+}
+.p_txt{
+	width:250px;
+	height:80px;
+	position:relative;
+	top:20px;
+	left:60px;
+	text-align:center;
+	line-height:40px;
+	font-weight:bold;
+	font-family:'NanumSquare', sans-serif;
+	color:#f8e15d;
+}
+.p_txt > h4 {
+	font-size:25px;
+}
+.p_txt > h3 {
+	font-size:30px;
+}
+.profile_2{
+	width:400px;
+	height:800px;
+	float:left;
+	margin-left:100px;
+}
+.profile_3{
+	width:400px;
+	height:800px;
+	float:left;
+	margin-left:100px;
+}
+.p_box{
+	width:400px;
+	height:200px;
+	margin-bottom:20px;
+}
+.p_box2{
+	width:400px;
+	height:380px;
+}
+.skill{
+	width:400px;
+	height:30px;
+	margin-bottom:20px;
+	float:left;
+}
+.skill > .skill:nth-last-child(1){
+	margin-bottom: 0;
+}
+.skill >.skillname{
+display: inline-block;
+width: 300px;
+font-size: 20px;
+font-weight: 500;
+margin-bottom:10px;
+}
+.skill > .skillper {
+display: inline-block;
+width: 60px;
+height: 20px;
+text-align: center;
+font-size: 18px;
+}
+
+.p_box2 > .skill > .progress {
+	display: inline-block;
+	width:300px;
+	height:20px;
+	background-color: #d6d3d3;
+	border-radius: 10px;
+}
+.p_box2 >.skill > .progress >.gauge {
+    display: inline-block;
+    width:10%;
+    height:20px;
+    background-color:#f8e15d;
+    border-radius: 10px;
+    transition: 3s linear;
+}
+#redesign{
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+	background-image:url("../image/design_bg.png");
+	background-repeat: no-repeat;
+}
+.re_content{
+	width:1600px;
+	height:800px;
+	padding:100px;
+	margin: 0 auto;
+}
+.title {
+	width:500px;
+	height:100px;
+	font-size:50px;
+	text-align:center;
+	font-family:'Recipekorea';
+	color:#f8e15d;
+	margin:0 auto;
+}
+.re_txt{
+	width:280px;
+	height:200px;
+	float:left;
+	margin-top:200px;
+}
+.re_txt > h3 {
+	font-size:40px;
+	margin-bottom:20px;
+	font-family:'Recipekorea';
+	color:#f8e15d;
+}
+.re_txt2 > h3 {
+	font-size:40px;
+	margin-bottom:20px;
+	font-family:'Recipekorea';
+	color:#f8e15d;
+}
+.re_txt2{
+	width:200px;
+	height:200px;
+	float:left;
+	margin-top:200px;
+	margin-left:30px;
+
+}
+.re_txt >ul >li{
+	font-family:'NanumSquare', sans-serif;
+	font-size:22px;
+	line-height:50px;
+}
+.re_txt > ul > li >span {
+	font-weight:bold;
+}
+.re_txt2 >p{
+	font-family:'NanumSquare', sans-serif;
+	font-size:22px;
+}
+.mockup{
+	width:920px;
+	height:550px;
+	float:left;
+	margin-top:30px;
+	margin-left:50px;
+}
+#webdesign{
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+	background-image:url("../image/web_bg.jpg");
+	background-repeat: no-repeat;
+}
+.web_content{
+	width:1400px;
+	height:100vh;
+	padding:100px;
+	margin:0 auto;
+}
+.web{
+	width:500px;
+	height:600px;
+	margin-top:100px;
+	margin-left:150px;
+	float:left;
+}
+.web_wrap{
+	width:1400px;
+	height:730px;
+	margin:0 auto;
+	margin-top:30px;
+}
+.web_logo{
+	width:400px;
+	height:100px;
+	margin: 0 auto;
+	margin-bottom:30px;
+}
+.web_txt{
+	width:450px;
+	height:300px;
+	font-size:22px;
+	font-family:'NanumSquare', sans-serif;
+	line-height:50px;
+	border-top:1px solid gray;
+	padding-top:20px;
+	margin-left:60px;
+}
+.web_txt > ul > li > span {
+	font-weight:bold;
+	margin-right:20px;
+}
+button{
+	width:180px;
+	height:50px;
+	background:#f8e15d;
+	color:#fff;
+	border:none;
+	font-size:22px;
+	padding:0 2px;
+	cursor:pointer;
+	position:relative;
+	margin-top:30px;
+	transition:800ms ease all;
+	outline:none;
+}
+button:hover{
+	background:#fff;
+	color:#f8e15d;
+}
+button:before,button:after{
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	height:2px;
+	width:0;
+	background: #f8e15d;
+	transition:400ms ease all;
+}
+button:after{
+	right:inherit;
+	top:inherit;
+	left:0;
+	bottom:0;
+}
+button:hover:before,button:hover:after{
+	width:100%;
+	transition:800ms ease all;
+}
+.web_image{
+	width:500px;
+	height:720px;
+	margin-left:100px;
+	float:left;
+}
+#image{
+	width:500px;
+	height:720px;
+	margin-left:100px;
+	float:left;
+}
+#weblogo {
+    width: 400px;
+    height: 100px;
+    margin: 0 130px;
+    margin-bottom: 30px;
+}
+#webdesign2{
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+	background-image:url("../image/web_bg_06.png");
+	background-repeat: no-repeat;
+}
+
+#design{
+	height:100%;
+	background-image:url("../image/design_bg.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+.de_content{
+	width:1200px;
+	height:100%;
+	padding:100px;
+	margin:0 auto;
+}
+
+.de_image1{
+	width:400px;
+	height:500px;
+	float:left;
+}
+.de_image2{
+	width:800px;
+	height:500px;
+	float:left;
+}
+.clear{
+	clear:both;
+}
+input{
+	display:none;
+}
+label{
+	display:block;
+	width:200px;
+	height:50px;
+	float:left;
+	cursor:pointer;
+	position:relative;
+	top:0;
+	left:300px;
+}
+.tab_all,.tab_grap,.tab_cera{ 
+font-size:20px;
+font-family:'NanumSquare'sans-serif;
+line-height:50px;
+text-align:center;
+}
+
+.tab_bx{
+	width:1200px;
+	height:100%;
+	margin-top:30px;
+	display:none;
+}
+.tab_bx > ul {
+	width:1200px;
+	height:500px;
+}
+
+#all:checked ~.tab_all{
+	background:#ccad00;
+	color:#fff;
+}
+#graphic:checked ~.tab_grap{
+	background:#ccad00;
+	color:#fff;
+}
+#ceramic:checked ~.tab_cera{
+	background:#ccad00;
+	color:#fff;
+}
+#all:checked ~ .bx_all{         
+	display:block;
+}
+#graphic:checked ~ .bx_grap{         
+	display:block;
+}
+#ceramic:checked ~ .bx_cera{         
+	display:block;
+}
+
+#contact{
+	height:100vh;
+	background-image:url("../image/캡처.PNG");
+	background-position:top;
+	background-position:right;
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+.contact_txt > ul>li {
+	font-family: 'NanumSquare', sans-serif;
+	font-size: 22px;
+	line-height:40px;
+	margin-left:30px;
+}
+.contact_txt {
+	width:500px;
+	height:500px;
+	padding-top:250px;
+	padding-left:250px;
+}
+.contact_txt > h2 {
+	font-size: 60px;
+	font-family:'Recipekorea';
+	color:#f8e15d;
+	margin-bottom:20px;
+	margin-left:10px;
+}
+.contact_txt > h1{
+	font-size: 100px;
+	font-family:'Recipekorea';
+	color:#f8e15d;
+	margin-bottom:50px;
+}
+
+
+</style>    
 <body>
         <div class=content id="header">
             <div id="logo"><a href="#"></a></div>
